@@ -1,0 +1,66 @@
+/*初始化样式*/
+*{ margin: 0; padding: 0; }
+li{ list-style-type: none; }
+a{ text-decoration:none; }
+
+
+
+
+/*layout*/
+#nav{ height: 85px; width: 100%; margin-bottom: 15px;  
+	  border: 2px solid #F0EEE8; box-shadow: 2px 2px 2px #F0EEE8; background: #FFFFFF; }
+#nav .nav-content{ height: 85px; width: 990px;margin: 0 auto;position: relative; }
+
+#content{ width: 990px; margin: 100px auto 0; overflow: hidden; }
+#content .main{ float: left; width: 560px; border: 1px solid #E8E3D3; padding: 40px 40px 0 40px; }
+#content .side{ float: right; height: 480px; width: 345px; border: 1px solid #E8E3D3; border-left: none;
+                padding: 40px auto; }
+
+#footer{ height: 200px; width: 100%; border: 1px solid #CCCCCC ; background: #666; border-top: 3px solid #F7BD44; }
+#footer .footer-wrap{ margin: 30px auto; width: 990px; }
+#footer .site-hot-promo-link{ margin-bottom: 10px;}
+#footer .site-hot-promo-link a{ font-size: 12px; color: #ffffff; }
+#footer .site-friendly-link{ margin-bottom: 10px; }
+#footer .site-friendly-link a{ font-size: 12px; color: #ffffff; }
+#footer .left{ font-size: 12px; color: #ffffff; margin-bottom: 10px;}
+#footer .left a{ font-size: 12px; color: #ffffff; }
+#footer .right{}
+#footer .right a{ font-size: 12px; color: #ffffff; }
+
+
+
+/*nav*/
+#nav span{ position: absolute;right: 0; top: 0; }
+#nav span a{ color:#666;  font-size: 13px; margin-right: 20px; }
+#nav span a:hover{ text-decoration: underline; }
+#nav img{ position: absolute; left: 0;top: 15px; }
+#nav ul{ position: absolute; left: 160px; top: 0; }
+#nav ul li{ float: left; }
+#nav ul li a{ font-size: 16px;  color:#867F6F; display: inline-block; height: 85px; width:85px;
+               text-align: center; line-height: 90px; }
+#nav ul li a:hover{ background-color: #F0EEE8; }
+#nav ul li .active{ background-color: #F0EEE8; }
+#nav form{ position: relative; left: 640px; top: 35px; width: 350px;}
+#nav .text{  width: 280px; height:36px; border: 1px solid #e5e5e5; }
+#nav .text:focus{ outline: none; }
+#nav .button{  width: 70px; height:38px; color: #3e3e3e; background:#F0EEE8; border: none; 
+	           position: absolute; right: 0px; border: 1px solid #e5e5e5; font-size: 12px; }
+#nav .button:active{ background: #999; color: #fff; }
+#nav .button:focus{ outline: none; }
+ /*side*/
+
+.side .cinema-box-nav{ border-bottom: 1px solid #E8E3D3; position: relative; width: 310px; left: 14px; top: 30px; }
+.side .cinema-box-nav p{ font-size: 18px; font-family: "微软雅黑"; color: #867F6F; line-height: 40px;}
+.side .cinema-box-nav a{ position: absolute; right: 0; text-decoration: none; color: #F7BD44;font-size: 12px; bottom: 10px; }
+.side .cinema-box-nav a:hover{color: #E79D02; }
+
+.side .cinema-box{ height: 63px; width: 345px; position: relative; border-bottom: 1px solid #F0EEE8; top: 50px;}
+.side .cinema-box .cinema{ position: absolute; left: 20px; top: 10px; }
+.side .cinema-box .cinema a{ font-family: "微软雅黑"; font-size: 14px; color: #3e3e3e; }
+.side .cinema-box .address{ font-family: "微软雅黑"; font-size: 12px; position: absolute; left: 20px; top: 35px; }
+.side .ticket{ display: inline-block; width: 75px; height: 30px; background: #F7BD44; 
+	          text-align: center; line-height: 30px; position: absolute; right: 10px; top: 20px;}
+.side .ticket a{ color: #FFFFFF; font-size: 14px; }
+.side .ticket a:hover{ text-decoration: underline; }
+
+.side img{  position: relative; top: 70px; left: 16px; }

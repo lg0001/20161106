@@ -1,0 +1,21 @@
+*{ padding: 0; margin: 0; }
+body{margin-top: 170px; background: url(../images/bg2.jpg) no-repeat center center; }
+
+.table{ height: 400px; width: 500px; position: relative; left: 420px; bottom: 40px; background: #fff; border-radius: 15px; }
+.table .form-wrap{ width: 60%; height: 100%; margin: 0 auto; position: relative; }
+.table .form-wrap img{ position: absolute; left: 70px; top: 20px; }
+.table .form-wrap input{ width: 90%; height: 30px; background: #FFFFCC; border: 1px solid #F7BD44; outline: none; border-radius: 10px; }
+.table .form-wrap .account{ position: absolute; top: 100px; left: 12px;}
+.table .form-wrap .password{ position: absolute; top: 150px; left: 12px; }
+.table .form-wrap .identifying{ width: 30%; height: 30px; position: absolute; top: 200px; left: 12px; background: #fff;}
+.table .form-wrap .identifying-pic{ display: none; position: absolute; top: 200px; left: 120px; width: 30%; height: 30px; }
+.table .form-wrap .active{ display: block; }
+.table .form-wrap #replace{ color: #F7BD44; text-decoration: none; font-size: 12px; position: absolute; top: 215px; left: 220px; }
+.form-wrap #replace:hover{ text-decoration: underline; }
+.table .form-wrap .checkbox{ width: 15px; height: 15px;  position: absolute;top: 250px; left: 12px;}
+.table .form-wrap em{ font-style: normal; font-size: 14px; font-family: "微软雅黑"; color: #867F6F; position: absolute;top: 248px; left: 40px; }
+.table .form-wrap .login{ width: 80px; height: 30px; background:#F7BD44; color: #fff; position: absolute; top: 290px; left: 50px;}
+.table .form-wrap .login:active{ background: #E79D02;}
+.table .form-wrap .reset{ width: 80px; height: 30px; background:#F7BD44; color: #fff; position: absolute; top: 290px; left: 150px; }
+.table .form-wrap .reset:active{ background: #E79D02;}
+.table .back{ position: absolute; bottom: 5px; right: 5px; font-size: 14px; font-family: "微软雅黑"; color: #867F6F; text-decoration: none; }

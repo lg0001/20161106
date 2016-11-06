@@ -1,0 +1,55 @@
+/*public*/
+*{padding: 0; margin: 0; font-family: "微软雅黑";}
+.movie-mask{ height: 225px; width: 160px; position: absolute; z-index: 10;
+	                                background: #000000; opacity: 0.5; display:none; }
+.movie-infor{  width: 125px;position: absolute; z-index: 1000;
+               padding-top: 20px;font-size: 14px;
+               left: 20px; top: 25px; display: none; cursor: pointer; }
+.movie-infor span{color: #FFFFFF; display: block;line-height: 24px;overflow: hidden;
+	              text-overflow: ellipsis;white-space:nowrap; 
+	              font-family: "华文细黑";}/*最后这三个属性只有一起使用
+	                                         时才有超出的文本以省略号显示的效果*/
+
+/*style*/
+
+
+
+#tab-control{ border-bottom: 1px solid #E8E3D3; margin-bottom: 30px; position: relative; height: 30px;}
+#tab-control p{ font-size: 16px;position: absolute; left: 130px; bottom: 0px; color: #867F6F; 
+	            cursor: pointer; line-height: 40px; }
+#tab-control p:hover{color: #3e3e3e; }
+#tab-control #first{ left: 0; }
+#tab-control .active{ color: #3e3e3e; border-bottom: 1px solid #F7BD44;  }
+#tab-control a{ position: absolute; right: 0; text-decoration: none; color: #F7BD44;font-size: 12px; }
+#tab-control a:hover{color: #E79D02; }
+
+
+/*默认初始状态为section1部分显现，section2部分隐藏，当触发
+ 点击事件时，通过js动态控制section1,2 display的值，
+重新设置显示和隐藏部分*/
+#movie .section1{ position: relative; display:block; }
+#movie .section1 div{ position: absolute;  }
+#movie .section1 .div1{ left: 0;}
+#movie .section1 .div2{ left: 207px;}
+#movie .section1 .div3{ left: 414px;}
+#movie .section1 .div4{ left: 621px;}
+#movie .section1 .div5{ left: 828px;}
+#movie .section1 div img{ height: 225px; width: 160px;position: absolute; z-index: 1; }
+#movie .section1 div .movie-decoration{ height: 51px; width: 51px; position: absolute; z-index: 1000; }
+#movie .section1 div a{ text-decoration: none; position: absolute; top: 225px; display: block; 
+	                    height: 40px; width:160px; background:#F7BD44; color: #FFFFFF; text-align: center;
+	                    line-height: 35px;  font-size: 12px;  }
+
+
+
+#movie .section2{ position: relative;  display:none; }
+#movie .section2 div{ position: absolute; }
+#movie .section2 .div1{ left: 0;}
+#movie .section2 .div2{ left: 207px;}
+#movie .section2 .div3{ left: 414px;}
+#movie .section2 .div4{ left: 621px;}
+#movie .section2 .div5{ left: 828px;}
+#movie .section2 div img{ height: 225px; width: 160px;position: absolute; z-index: 1; }
+#movie .section2 div a{ text-decoration: none; position: absolute; top: 225px; display: block; 
+	                    height: 40px; width:160px; border:1px solid #e5e5e5; border-top: none; background:#fff; color: #3e3e3e; font-family: "微软雅黑"; font-size: 12px; text-align: center;
+	                    line-height: 35px;   }

@@ -1,0 +1,44 @@
+
+#slider{
+	width: 1360px;
+	height: 360px;
+	position: relative;
+	overflow: hidden;  /*超出区域的图片全部隐藏*/
+}
+#slider ul{
+    position: absolute;/*让包含图片的ul区域绝对定位，再通过JavaScript动态设置
+                         left属性的值来控制ul在屏幕所处位置，图片移动的原理*/
+    left: 0px;
+}
+#slider ul li{
+	float: left;
+}
+#slider ul li img{
+	height: 360px;
+    width: 1920px;
+    position: relative;
+    left: -280px;      /*因为单张图片的大小超出了可视区域的大小，为了图片居中，重新定位图片的位置*/
+}
+
+#ctrl{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 20px;
+	text-align: center;/*使控制按钮居中*/
+}
+#ctrl a{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px; 
+	background-color: #FFFFFF;
+}
+
+#ctrl a:hover{
+	background-color: #FF0033;
+}
+
+#ctrl .on{
+	background-color: #FF0033;
+}

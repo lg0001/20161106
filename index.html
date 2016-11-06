@@ -1,0 +1,962 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>荔枝电影</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="js/script.js" type="text/JavaScript"></script><!--js文件-->
+<link rel="stylesheet" href="css/style.css" type="text/css"/><!--CSS布局文件-->
+<link rel="stylesheet" href="css/slider.css" type="text/css"/><!--幻灯片CSS样式文件-->
+<link rel="stylesheet" href="css/tab-options.css" type="text/css"/><!--Tab标签切换CSS文件-->
+<link rel="stylesheet" href="css/list.css" type="text/css"/><!--列表变换CSS文件-->
+<link rel="stylesheet" href="css/list2.css" type="text/css"/><!--列表变换2CSS文件-->
+<link rel="stylesheet" href="css/waterfall.css" text="text/css" /><!--瀑布流布局CSS样式文件-->
+<script src="js/jquery-1.4.2.min.js" type="text/JavaScript"></script><!--jQuery-->
+
+
+</head>
+    <body>
+
+    	<div id="nav"><!--导航栏-->
+           <div class="nav-content">
+            <span>
+            <a href="index5.html" class="active">[登录]</a>
+            <a href="index5.html">[注册]</a>
+            </span>
+            <a href="index.html"><img src="images/logo.jpg" alt="logo" /></a>
+
+            <ul>
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="index2.html">影片</a></li>
+                <li><a href="index3.html">影院</a></li>
+                <li><a href="index6.html">社区</a></li>
+            </ul>
+            <form action="#">
+            <input type="text" placeholder="搜索影片和影院" class="text"/>
+            <input type="button" value="确定" class="button"/>
+            </form>
+           </div> 
+        </div><!--导航栏结束-->
+
+
+
+    	<div id="slider"><!--幻灯片-->
+            <ul><!--幻灯片区域-->
+                <li>
+                    <a href="#"><img src="images/image1.jpg" alt="" /></a>
+                </li>
+
+                <li>
+                    <a href="#"><img src="images/image2.jpg" alt="" /></a>
+                </li>
+
+                <li>
+                    <a href="#"><img src="images/image3.jpg" alt="" /></a>
+                </li>
+            </ul>
+        <div id="ctrl"><!--控制按钮区域-->
+            <a href="#" class="on"></a><!--“on”表示当前按钮处于点击或者活动状态-->
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+
+        </div><!--幻灯片区域结束-->
+
+        <!--内容区域-->
+        <div id="content">
+
+
+        		
+        		<div class="display">
+              
+                <div id="tab-control">
+                <p class="active" id="first">正在热映(26)</p>
+                <p class="static">即将上映(54)</p>
+                <a href="#">查看全部 ></a>
+                </div>
+
+           <!--电影海报部分-->
+           <!--把movie,section1,section2之间的空格删除，否则这些空格会算作 movie的文本节点，可以通过用控制台查看childNodes数组验证-->
+            <div id="movie"><div class="section1">
+                    
+                        <div class="div1" name="movie-box">
+                            <img src="images/新片.gif" alt="" class="movie-decoration"/>
+                            <img src="images/movie12.jpg" alt="movie" />
+                            <a href="index4.html">选座购票</a>
+                            <div class="movie-mask"></div>
+                            <div class="movie-infor">
+                                <span>导演：许诚毅</span>
+                                <span>主演：白百合 井柏然 林子杰 林子杰 林子杰</span>
+                                <span>类型：剧情 喜剧 奇幻</span>
+                                <span>地区：中国大陆</span>
+                                <span>语言：汉语</span>
+                                <span>片长：104分钟</span>
+                            </div>
+                        </div>
+                        <div class="div2 movie-box" name="movie-box">
+                            <img src="images/movie15.jpg" alt="movie" />
+                            <a href="index4.html">选座购票</a>
+                            <div class="movie-mask"></div>
+                            <div class="movie-infor">
+                                <span>导演：大卫·马伦戈</span>
+                                <span>主演：圭多·卡普里诺 卡洛琳娜·克雷仙蒂尼 玛雅·珊萨 芙劳拉·马丁内兹 菲利普·勒鲁瓦</span>
+                                <span>类型：剧情 犯罪 动作</span>
+                                <span>地区：意大利</span>
+                                <span>语言：意大利语</span>
+                                <span>片长：104</span>
+                            </div>
+                        </div>
+                        <div class="div3 movie-box" name="movie-box">
+                            <img src="images/3D.gif" alt="" class="movie-decoration"/>
+                            <img src="images/movie3.jpg" alt="movie" />
+                            <a href="index4.html">选座购票</a>
+                            <div class="movie-mask"></div>
+                            <div class="movie-infor">
+                                <span>导演：大卫·马伦戈</span>
+                                <span>主演：圭多·卡普里诺 卡洛琳娜·克雷仙蒂尼 玛雅·珊萨 芙劳拉·马丁内兹 菲利普·勒鲁瓦</span>
+                                <span>类型：剧情 犯罪 动作</span>
+                                <span>地区：意大利</span>
+                                <span>语言：意大利语</span>
+                                <span>片长：104</span>
+                            </div>
+                        </div>
+                        <div class="div4 movie-box" name="movie-box">
+                            <img src="images/movie4.jpg" alt="movie" />
+                            <a href="index4.html">选座购票</a>
+                            <div class="movie-mask"></div>
+                            <div class="movie-infor">
+                                <span>导演：大卫·马伦戈</span>
+                                <span>主演：圭多·卡普里诺 卡洛琳娜·克雷仙蒂尼 玛雅·珊萨 芙劳拉·马丁内兹 菲利普·勒鲁瓦</span>
+                                <span>类型：剧情 犯罪 动作</span>
+                                <span>地区：意大利</span>
+                                <span>语言：意大利语</span>
+                                <span>片长：104</span>
+                            </div>
+                        </div>
+                        <div class="div5 movie-box" name="movie-box">
+                            <img src="images/movie5.jpg" alt="movie" />
+                            <a href="index4.html">选座购票</a>
+                            <div class="movie-mask"></div>
+                            <div class="movie-infor">
+                                <span>导演：大卫·马伦戈</span>
+                                <span>主演：圭多·卡普里诺 卡洛琳娜·克雷仙蒂尼 玛雅·珊萨 芙劳拉·马丁内兹 菲利普·勒鲁瓦</span>
+                                <span>类型：剧情 犯罪 动作</span>
+                                <span>地区：意大利</span>
+                                <span>语言：意大利语</span>
+                                <span>片长：104</span>
+                            </div>
+                        </div>
+                                        
+                </div><div class="section2">
+                    
+                        <div class="div1" name="movie-box">
+                            <img src="images/movie6.jpg" alt="movie" />
+                            <a href="#">上映时间2015-07-27</a>
+                            <div class="movie-mask"></div>
+                            <div class="movie-infor">
+                                <span>导演：大卫·马伦戈</span>
+                                <span>主演：圭多·卡普里诺 卡洛琳娜·克雷仙蒂尼 玛雅·珊萨 芙劳拉·马丁内兹 菲利普·勒鲁瓦</span>
+                                <span>类型：剧情 犯罪 动作</span>
+                                <span>地区：意大利</span>
+                                <span>语言：意大利语</span>
+                                <span>片长：104</span>
+                            </div>
+                        </div>
+                        <div class="div2" name="movie-box">
+                            <img src="images/movie7.jpg" alt="movie" />
+                            <a href="#">上映时间2015-07-27</a>
+                            <div class="movie-mask"></div>
+                            <div class="movie-infor">
+                                <span>导演：大卫·马伦戈</span>
+                                <span>主演：圭多·卡普里诺 卡洛琳娜·克雷仙蒂尼 玛雅·珊萨 芙劳拉·马丁内兹 菲利普·勒鲁瓦</span>
+                                <span>类型：剧情 犯罪 动作</span>
+                                <span>地区：意大利</span>
+                                <span>语言：意大利语</span>
+                                <span>片长：104</span>
+                            </div>
+                        </div>
+                        <div class="div3" name="movie-box">
+                            <img src="images/movie8.jpg" alt="movie" />
+                            <a href="#">上映时间2015-07-27</a>
+                            <div class="movie-mask"></div>
+                            <div class="movie-infor">
+                                <span>导演：大卫·马伦戈</span>
+                                <span>主演：圭多·卡普里诺 卡洛琳娜·克雷仙蒂尼 玛雅·珊萨 芙劳拉·马丁内兹 菲利普·勒鲁瓦</span>
+                                <span>类型：剧情 犯罪 动作</span>
+                                <span>地区：意大利</span>
+                                <span>语言：意大利语</span>
+                                <span>片长：104</span>
+                            </div>
+                        </div>
+                        <div class="div4" name="movie-box">
+                            <img src="images/movie9.jpg" alt="movie" />
+                            <a href="#">上映时间2015-07-27</a>
+                            <div class="movie-mask"></div>
+                            <div class="movie-infor">
+                                <span>导演：大卫·马伦戈</span>
+                                <span>主演：圭多·卡普里诺 卡洛琳娜·克雷仙蒂尼 玛雅·珊萨 芙劳拉·马丁内兹 菲利普·勒鲁瓦</span>
+                                <span>类型：剧情 犯罪 动作</span>
+                                <span>地区：意大利</span>
+                                <span>语言：意大利语</span>
+                                <span>片长：104</span>
+                            </div>
+                        </div>
+                        <div class="div5" name="movie-box">
+                            <img src="images/movie10.jpg" alt="movie" />
+                            <a href="#">上映时间2015-07-27</a>
+                            <div class="movie-mask"></div>
+                            <div class="movie-infor">
+                                <span>导演：大卫·马伦戈</span>
+                                <span>主演：圭多·卡普里诺 卡洛琳娜·克雷仙蒂尼 玛雅·珊萨 芙劳拉·马丁内兹 菲利普·勒鲁瓦</span>
+                                <span>类型：剧情 犯罪 动作</span>
+                                <span>地区：意大利</span>
+                                <span>语言：意大利语</span>
+                                <span>片长：104</span>
+                            </div>
+                        </div>
+                                        
+                </div></div>
+
+
+                </div>
+
+
+        		<div class="clear"><!--父级包裹层：清除浮动之用,子元素是三列浮动布局-->
+
+        			<div class="section-wrap fl">
+        
+        		<div class="section fl" id="box-wrap"><!--票房排行-->
+                    <div class="box-nav">
+                    <a href="#">全部影片 ></a>
+                    <p>上周票房排行</p>
+                    </div>   
+                    <div class="box">
+        <div class="resume">
+            <span class="rank">1</span>
+            <span class="title">
+            <a href="#">捉妖记</a>
+            </span>
+            <span class="score">9.0</span>
+        </div>
+
+        <div class="detail">
+            <span class="rank">1</span>
+            <span class="poster">
+                <a href="#"><img src="images/c1.jpg" alt="" /></a>
+            </span>
+            <span class="title">
+                <a href="#">捉妖记</a>
+            </span>
+            <span class="score">9.0</span>
+            <span class="ticket">
+                <a href="#">选座购票</a>
+            </span>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <div class="resume">
+            <span class="rank">2</span>
+            <span class="title">
+            <a href="#">王的女人.杨贵妃</a>
+            </span>
+            <span class="score">6.9</span>
+        </div>
+
+        <div class="detail">
+            <span class="rank">2</span>
+            <span class="poster">
+                <a href="#"><img src="images/c2.jpg" alt="" /></a>
+            </span>
+            <span class="title">
+                <a href="#">王的女人.杨贵妃</a>
+            </span>
+            <span class="score">6.9</span>
+            <span class="ticket">
+                <a href="#">选座购票</a>
+            </span>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <div class="resume">
+            <span class="rank">3</span>
+            <span class="title">
+            <a href="#">迷城</a>
+            </span>
+            <span class="score">9.2</span>
+        </div>
+
+        <div class="detail">
+            <span class="rank">3</span>
+            <span class="poster">
+                <a href="#"><img src="images/c3.jpg" alt="" /></a>
+            </span>
+            <span class="title">
+                <a href="#">迷城</a>
+            </span>
+            <span class="score">9.2</span>
+            <span class="ticket">
+                <a href="#">选座购票</a>
+            </span>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <div class="resume">
+            <span class="rank">4</span>
+            <span class="title">
+            <a href="#">煎饼侠</a>
+            </span>
+            <span class="score">8.5</span>
+        </div>
+
+        <div class="detail">
+            <span class="rank">4</span>
+            <span class="poster">
+                <a href="#"><img src="images/c4.jpg" alt="" /></a>
+            </span>
+            <span class="title">
+                <a href="#">煎饼侠</a>
+            </span>
+            <span class="score">8.5</span>
+            <span class="ticket">
+                <a href="#">选座购票</a>
+            </span>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <div class="resume">
+            <span class="rank">5</span>
+            <span class="title">
+            <a href="#">西游记之大圣归来</a>
+            </span>
+            <span class="score">9.2</span>
+        </div>
+
+        <div class="detail">
+            <span class="rank">5</span>
+            <span class="poster">
+                <a href="#"><img src="images/c5.jpg" alt="" /></a>
+            </span>
+            <span class="title">
+                <a href="#">西游记之大圣归来</a>
+            </span>
+            <span class="score">9.2</span>
+            <span class="ticket">
+                <a href="#">选座购票</a>
+            </span>
+        </div>
+    </div>
+                </div>
+
+        		<div class="section fr" id="box-wrap2"><!--影院排行-->
+                    <div class="box2-nav">
+                    <a href="#">全部影院 ></a>
+                    <p>热门影院排行</p>
+                    </div>   
+                    <div class="box2">
+        <div class="resume2">
+            <span class="rank">1</span>
+            <span class="cinema">
+            <a href="#">深圳嘉熙业国际影城</a>
+            </span>
+            <span class="address">深圳市宝安区明治大道嘉熙业广场5楼</span>
+        </div>
+
+        <div class="detail2">
+            <span class="rank">1</span>
+            <span class="cinema">
+                <a href="#">深圳嘉熙业国际影城</a>
+            </span>
+            <span class="address">深圳市宝安区明治大道...</span>
+            <span class="ticket">
+                <a href="#">选座</a>
+            </span>
+        </div>
+    </div>
+
+
+    <div class="box2">
+        <div class="resume2">
+            <span class="rank">2</span>
+            <span class="cinema">
+            <a href="#">深圳MCL州立影城</a>
+            </span>
+            <span class="address">深圳市罗湖区泰宁路嘉熙业广场5楼</span>
+        </div>
+
+        <div class="detail2">
+            <span class="rank">2</span>
+            <span class="cinema">
+                <a href="#">深圳MCL州立影城</a>
+            </span>
+            <span class="address">深圳市罗湖区泰宁路嘉...</span>
+            <span class="ticket">
+                <a href="#">选座</a>
+            </span>
+        </div>
+    </div>
+
+
+<div class="box2">
+        <div class="resume2">
+            <span class="rank">3</span>
+            <span class="cinema">
+            <a href="#">新华迎新国际影城</a>
+            </span>
+            <span class="address">深圳市宝安区西安大道沙井大道328号5楼</span>
+        </div>
+
+        <div class="detail2">
+            <span class="rank">3</span>
+            <span class="cinema">
+                <a href="#">新华迎新国际影城</a>
+            </span>
+            <span class="address">深圳市宝安区西安大道...</span>
+            <span class="ticket">
+                <a href="#">选座</a>
+            </span>
+        </div>
+    </div>
+
+
+<div class="box2">
+        <div class="resume2">
+            <span class="rank">4</span>
+            <span class="cinema">
+            <a href="#">深圳胜达国际影城</a>
+            </span>
+            <span class="address">深圳市龙岗区中心城嘉熙业广场</span>
+        </div>
+
+        <div class="detail2">
+            <span class="rank">4</span>
+            <span class="cinema">
+                <a href="#">深圳胜达国际影城</a>
+            </span>
+            <span class="address">深圳市龙岗区中心城嘉...</span>
+            <span class="ticket">
+                <a href="#">选座</a>
+            </span>
+        </div>
+    </div>
+
+
+<div class="box2">
+        <div class="resume2">
+            <span class="rank">5</span>
+            <span class="cinema">
+            <a href="#">深圳中影星美国际影城</a>
+            </span>
+            <span class="address">深圳市宝安区沙井大道328号5楼</span>
+        </div>
+
+        <div class="detail2">
+            <span class="rank">5</span>
+            <span class="cinema">
+                <a href="#">深圳中影星美国际影城</a>
+            </span>
+            <span class="address">深圳市宝安区沙井大道...</span>
+            <span class="ticket">
+                <a href="#">选座</a>
+            </span>
+        </div>
+    </div>
+
+
+    <div class="box2">
+        <div class="resume2">
+            <span class="rank">6</span>
+            <span class="cinema">
+            <a href="#">深圳大地影院</a>
+            </span>
+            <span class="address">深圳市宝安区沙井大道328号5楼</span>
+        </div>
+
+        <div class="detail2">
+            <span class="rank">6</span>
+            <span class="cinema">
+                <a href="#">深圳大地影院</a>
+            </span>
+            <span class="address">深圳市宝安区沙井大街...</span>
+            <span class="ticket">
+                <a href="#">选座</a>
+            </span>
+        </div>
+    </div>
+                </div>
+
+        		    </div>
+
+        		<div class="section fr" ><!--热门预告片-->
+                    <div class="movie-recent-item-nav">
+                    <p>热门预告片</p>
+                    </div>
+                    <div id="movie-recent">
+        <div class="movie-recent-item">
+            <a href="#">
+                <img class="movie" src="images/y1.jpg" alt="预告片" />
+                <img class="vidio-icon" src="images/vidio-icon.png" alt="播放器图标" />
+                <p>王的女人.杨贵妃</p>
+            </a>
+        </div>
+
+        <div class="movie-recent-item">
+            <a href="#">
+                <img class="movie" src="images/y2.jpg" alt="预告片" />
+                <img class="vidio-icon" src="images/vidio-icon.png" alt="播放器图标" />
+                <p>巴黎假期</p>
+            </a>
+        </div>
+
+        <div class="movie-recent-item">
+            <a href="#">
+                <img class="movie" src="images/y3.jpg" alt="预告片" />
+                <img class="vidio-icon" src="images/vidio-icon.png" alt="播放器图标" />
+                <p>捉妖记</p>
+            </a>
+        </div>
+
+        <div class="movie-recent-item">
+            <a href="#">
+                <img class="movie" src="images/y4.jpg" alt="预告片" />
+                <img class="vidio-icon" src="images/vidio-icon.png" alt="播放器图标" />
+                <p>西游记之大圣归来</p>
+            </a>
+        </div>
+
+         <div class="movie-recent-item">
+            <a href="#">
+                <img class="movie" src="images/y4.jpg" alt="预告片" />
+                <img class="vidio-icon" src="images/vidio-icon.png" alt="播放器图标" />
+                <p>巴黎假期</p>
+            </a>
+        </div>
+
+        <div class="movie-recent-item">
+            <a href="#">
+                <img class="movie" src="images/y5.jpg" alt="预告片" />
+                <img class="vidio-icon" src="images/vidio-icon.png" alt="播放器图标" />
+                <p>煎饼侠</p>
+            </a>
+        </div>
+        </div>
+        
+                </div>
+
+        		</div>
+
+                <div class="water-nav">
+                    <a href="#">进入社区 ></a>
+                    <p>影评</p>                    
+                </div>
+        		<div class="waterfall">
+
+              <div class="water">
+        <ul>
+            <li>
+                <a href="#"><img src="images/waterfall1.jpg" alt="" /></a>            
+            </li>
+
+            <li class="userli">
+                <a href="#"><img src="images/waterfall1-1.jpg" alt="" /></a>
+                <p>有人星夜赶科场</p>
+                <p>评《<a href="">闪灵</a>》</p>
+                <strong>10</strong>
+            </li>
+
+            <li class="textli">
+                <a href="#">闪灵，你真的看懂了吗？</a>
+                <p>在反复温习了此片不下20来遍之后，我给“闪灵”一词下了一个自认为比较准确的定义--“遥感能力”。</p>
+            </li>
+            <li class="replayli">
+                <a href="#"><img src="images/waterfall1-1-1.jpg" alt="" /></a>
+                <a href="#" class="name">MrPink</a>
+                <p>我看过一个解读：此片的主题其实是反纳粹</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="water">
+        <ul>
+            <li>
+                <a href="#"><img src="images/waterfall2.jpg" alt="" /></a>            
+            </li>
+
+            <li class="userli">
+                <a href="#"><img src="images/waterfall2-2.jpg" alt="" /></a>
+                <p>有人星夜赶科场</p>
+                <p>评《<a href="">迷途</a>》</p>
+                <strong>8.0</strong>
+            </li>
+
+            <li class="textli">
+                <a href="#">为理想而谋杀自己，够狠！</a>
+                <p>对“大卫•戈尔”维护理想的方式是否合宜，我不敢妄加评判，但无疑他们捍卫自己理想的刚毅令我肃然起敬。</p>
+            </li>
+            <li class="replayli">
+                <a href="#"><img src="images/waterfall1-1-1.jpg" alt="" /></a>
+                <a href="#" class="name">MrPink</a>
+                <p>我看过一个解读：此片的主题其实是反纳粹</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="water">
+        <ul>
+            <li>
+                <a href="#"><img src="images/waterfall3.jpg" alt="" /></a>            
+            </li>
+
+            <li class="userli">
+                <a href="#"><img src="images/waterfall3-3.jpg" alt="" /></a>
+                <p>华北唯一的王子</p>
+                <p>评《<a href="">狩猎</a>》</p>
+                <strong>9.2</strong>
+            </li>
+
+            <li class="textli">
+                <a href="#">夜明亮了她的眼</a>
+                <p>《飞行者》是贝金赛尔再一次在银幕上的一次华丽转身，从此，她在我脑海中是一个爱到深处终不悔的痴情女子。</p>
+            </li>
+            <li class="replayli">
+                <a href="#"><img src="images/waterfall1-1-1.jpg" alt="" /></a>
+                <a href="#" class="name">MrPink</a>
+                <p>美人的演技还需要锤炼</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="water">
+        <ul>
+            <li>
+                <a href="#"><img src="images/waterfall4.jpg" alt="" /></a>            
+            </li>
+
+            <li class="userli">
+                <a href="#"><img src="images/waterfall1-1.jpg" alt="" /></a>
+                <p>有人星夜赶科场</p>
+                <p>评《<a href="">闪灵</a>》</p>
+                <strong>10</strong>
+            </li>
+
+            <li class="textli">
+                <a href="#">闪灵，你真的看懂了吗？</a>
+                <p>在反复温习了此片不下20来遍之后，我给“闪灵”一词下了一个自认为比较准确的定义--“遥感能力”。</p>
+            </li>
+            <li class="replayli">
+                <a href="#"><img src="images/waterfall1-1-1.jpg" alt="" /></a>
+                <a href="#" class="name">MrPink</a>
+                <p>我看过一个解读：此片的主题其实是反纳粹</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="water">
+        <ul>
+            <li>
+                <a href="#"><img src="images/waterfall5.jpg" alt="" /></a>            
+            </li>
+
+            <li class="userli">
+                <a href="#"><img src="images/waterfall5-5.jpg" alt="" /></a>
+                <p>华北唯一的王子</p>
+                <p>评《<a href="">闪灵</a>》</p>
+                <strong>8.5</strong>
+            </li>
+
+            <li class="textli">
+                <a href="#">闪灵，你真的看懂了吗？</a>
+                <p>在反复温习了此片不下20来遍之后，我给“闪灵”一词下了一个自认为比较准确的定义--“遥感能力”。</p>
+            </li>
+            <li class="replayli">
+                <a href="#"><img src="images/waterfall1-1-1.jpg" alt="" /></a>
+                <a href="#" class="name">MrPink</a>
+                <p>我看过一个解读：此片的主题其实是反纳粹</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="water">
+        <ul>
+            <li>
+                <a href="#"><img src="images/waterfall6.jpg" alt="" /></a>            
+            </li>
+
+            <li class="userli">
+                <a href="#"><img src="images/waterfall6-6.jpg" alt="" /></a>
+                <p>华北唯一的王子</p>
+                <p>评《<a href="">闪灵</a>》</p>
+                <strong>10</strong>
+            </li>
+
+            <li class="textli">
+                <a href="#">闪灵，你真的看懂了吗？</a>
+                <p>在反复温习了此片不下20来遍之后，我给“闪灵”一词下了一个自认为比较准确的定义--“遥感能力”。</p>
+            </li>
+            <li class="replayli">
+                <a href="#"><img src="images/waterfall1-1-1.jpg" alt="" /></a>
+                <a href="#" class="name">MrPink</a>
+                <p>我看过一个解读：此片的主题其实是反纳粹</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="water">
+        <ul>
+            <li>
+                <a href="#"><img src="images/waterfall7.jpg" alt="" /></a>            
+            </li>
+
+            <li class="userli">
+                <a href="#"><img src="images/waterfall7-7.jpg" alt="" /></a>
+                <p>华北唯一的王子</p>
+                <p>评《<a href="">闪灵</a>》</p>
+                <strong>10</strong>
+            </li>
+
+            <li class="textli">
+                <a href="#">闪灵，你真的看懂了吗？</a>
+                <p>在反复温习了此片不下20来遍之后，我给“闪灵”一词下了一个自认为比较准确的定义--“遥感能力”。</p>
+            </li>
+            <li class="replayli">
+                <a href="#"><img src="images/waterfall1-1-1.jpg" alt="" /></a>
+                <a href="#" class="name">MrPink</a>
+                <p>我看过一个解读：此片的主题其实是反纳粹</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="water">
+        <ul>
+            <li>
+                <a href="#"><img src="images/waterfall8.jpg" alt="" /></a>            
+            </li>
+
+            <li class="userli">
+                <a href="#"><img src="images/waterfall8-8.jpg" alt="" /></a>
+                <p>华北唯一的王子</p>
+                <p>评《<a href="">闪灵</a>》</p>
+                <strong>10</strong>
+            </li>
+
+            <li class="textli">
+                <a href="#">闪灵，你真的看懂了吗？</a>
+                <p>在反复温习了此片不下20来遍之后，我给“闪灵”一词下了一个自认为比较准确的定义--“遥感能力”。</p>
+            </li>
+            <li class="replayli">
+                <a href="#"><img src="images/waterfall1-1-1.jpg" alt="" /></a>
+                <a href="#" class="name">MrPink</a>
+                <p>我看过一个解读：此片的主题其实是反纳粹</p>
+            </li>
+        </ul>      
+                </div><!--影评：瀑布流布局结束-->
+
+
+        </div>
+
+</div><!--内容区域结束-->
+
+
+
+    	<div id="footer"><!--页脚区域-->
+            <div class="footer-wrap">
+            <div class="site-hot-promo-link">
+                
+                    
+                        <a href="http://www.lizhi.fm/17248/">
+                            罗辑思维
+                        </a>
+                        
+                    
+                        <a href="http://www.lizhi.fm/658285/">
+                            周建龙版盗墓笔记
+                        </a>
+
+                        
+                    
+                        <a href="http://www.lizhi.fm/679472/">
+                            晓松奇谈
+                        </a>
+                        
+                    
+                        <a href="http://www.lizhi.fm/125847/">
+                            沈氏夫夫
+                        </a>
+                        
+                    
+                        <a href="http://www.lizhi.fm/37336/">
+                            张嘉佳睡前故事
+                        </a>
+                        
+                    
+                        <a href="http://www.lizhi.fm/67974/">
+
+                            耽美广播剧
+                        </a>
+                        
+                    
+                        <a href="http://www.lizhi.fm/1670628/">
+                            黄子华栋笃笑
+                        </a>
+                        
+                    
+                        <a href="http://www.lizhi.fm/650075/">
+                            chinadaily双语新闻
+                        </a>
+                        
+                    
+                        <a href="http://www.lizhi.fm/409843/">
+                            怪谈新耳袋
+                        </a>
+
+                        
+                    
+                        <a href="http://www.lizhi.fm/15354/">
+                            搞基实验室
+                        </a>
+                        
+                    
+                        <a href="http://www.lizhi.fm/18084/">
+                            昨天的你的现在的未来
+                        </a>
+                        
+                    
+                
+            </div>
+            <div class="site-friendly-link">
+                <a href="/links" class="more">更多</a>
+
+                <a>友情链接</a>
+                
+                    
+                        <a target="_blank" href="http://www.coolyun.com/">
+                            酷派最美天气
+                        </a>
+                        
+                    
+                        <a target="_blank" href="http://ear.duomi.com/">
+                             邻居的耳朵
+                        </a>
+                        
+                    
+                        <a target="_blank" href="http://jiaren.org/">
+                            佳人
+                        </a>
+
+                        
+                    
+                        <a target="_blank" href="http://www.paikew.com/">
+                            拍客网
+                        </a>
+                        
+                    
+                        <a target="_blank" href="http://www.oneplusbbs.com/">
+                            一加手机
+                        </a>
+                        
+                    
+                        <a target="_blank" href="http://www.meipai.com/">
+                            美拍
+                        </a>
+                        
+                    
+                        <a target="_blank" href="http://image.fengniao.com/">
+
+                            聚焦摄影
+                        </a>
+                        
+                    
+                        <a target="_blank" href="http://www.5253.com">
+                            5253手游网
+                        </a>
+                        
+                    
+                        <a target="_blank" href="http://www.woying.com/">
+                            必赢彩票网
+                        </a>
+                        
+                    
+                        <a target="_blank" href="http://www.letvcloud.com/">
+                            乐视云视频
+                        </a>
+
+                        
+                    
+                        <a target="_blank" href="http://www.uc.cn/">
+                            手机浏览器
+                        </a>
+                        
+                    
+                        <a target="_blank" href="http://www.2243.com/ ">
+                            2243小游戏
+                        </a>
+                        
+                    
+                        <a target="_blank" href="http://www.oschina.net/">
+                            开源中国
+                        </a>
+                        
+                    
+                        <a target="_blank" href="http://www.7po.com">
+
+                            智能电视应用
+                        </a>
+                        
+                    
+                        <a target="_blank" href="http://www.iyule.cc/">
+                            灵异事件
+                        </a>
+                        
+                    
+                        <a target="_blank" href="http://t.qianzhan.com/">
+                            科技新闻
+                        </a>
+                        
+                    
+                        <a target="_blank" href="http://www.xingmaow.com/">
+                            古风杏猫网
+                        </a>
+
+                        
+                    
+                        <a target="_blank" href="http://www.pk38.com/">
+                            网游加速器
+                        </a>
+                        
+                    
+                
+            </div>
+        
+        
+            <div class="left">
+                粤网文[2013]0757-157号 粤ICP备12026999号-5 穗公网安备44010650010105号<br>
+                荔枝网络技术有限公司 <a href="http://www.lizhi.fm/">荔枝电影</a> 2010-2015&copy; All Rights Reserved.
+            </div>
+
+            <div class="right">
+
+                
+                <a target="_blank" href="/sitemap.html">网站地图</a>
+                
+                <a target="_blank" rel="nofollow" href="http://blog.lizhi.fm/">博客</a>
+                <a target="_blank" rel="nofollow" href="http://blog.lizhi.fm/?cat=44">动态</a>
+                <a target="_blank" rel="nofollow" href="/about/aboutUs.html">关于我们</a>
+                <a target="_blank" rel="nofollow" href="/about/join.html">加入我们</a>
+
+                <a target="_blank" rel="nofollow" href="/about/contactUs.html">联系我们</a>
+                <a target="_blank" rel="nofollow" href="/about/agreement.html">服务协议</a>
+                <a target="_blank" rel="nofollow" href="/about/privacy.html">隐私政策</a>
+            </div>
+        </div>
+        </div>
+
+
+
+    </body>
+</html>

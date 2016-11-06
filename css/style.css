@@ -1,0 +1,54 @@
+/*初始化样式*/
+*{ margin: 0; padding: 0; }
+li{ list-style-type: none; }
+a{ text-decoration:none; }
+
+
+
+
+/*publi*/
+.fl{ float: left; }
+.fr{ float: right; }
+.clear{ overflow: hidden; }
+
+
+/*layout*/
+#nav{ height: 85px; width: 100%; margin-bottom: 15px;  
+	  border: 2px solid #F0EEE8; box-shadow: 2px 2px 2px #F0EEE8; background: #FFFFFF; }
+#nav .nav-content{ height: 85px; width: 990px;margin: 0 auto;position: relative; }
+#slider{ margin-bottom: 20px; }
+#content{ width: 990px; margin: 5px auto; padding: 20px;margin-bottom: 20px; }
+.display{ width: 990px; height: 379px; margin-bottom: 6px; }
+.section-wrap{ width: 650px; }
+.section{ width: 300px; margin-top: 30px; } 
+.waterfall{  width: 990px; margin-bottom: 30px; overflow: hidden; }
+#footer{ height: 200px; width: 100%; border: 1px solid #CCCCCC ; background: #666; border-top: 3px solid #F7BD44;}
+#footer .footer-wrap{ margin: 30px auto; width: 990px; }
+#footer .site-hot-promo-link{ margin-bottom: 10px;}
+#footer .site-hot-promo-link a{ font-size: 12px; color: #ffffff; }
+#footer .site-friendly-link{ margin-bottom: 10px; }
+#footer .site-friendly-link a{ font-size: 12px; color: #ffffff; }
+#footer .left{ font-size: 12px; color: #ffffff; margin-bottom: 10px;}
+#footer .left a{ font-size: 12px; color: #ffffff; }
+#footer .right{}
+#footer .right a{ font-size: 12px; color: #ffffff; }
+
+
+/*nav*/
+#nav span{ position: absolute;right: 0; top: 0; }
+#nav span a{ color:#666;  font-size: 13px; margin-right: 20px; }
+#nav span a:hover{ text-decoration: underline; }
+#nav img{ position: absolute; left: 0;top: 15px; }
+#nav ul{ position: absolute; left: 160px; top: 0; }
+#nav ul li{ float: left; }
+#nav ul li a{ font-size: 16px;  color:#867F6F; display: inline-block; height: 85px; width:85px;
+               text-align: center; line-height: 90px; }
+#nav ul li a:hover{ background-color: #F0EEE8; }
+#nav ul li .active{ background-color: #F0EEE8; }
+#nav form{ position: relative; left: 640px; top: 35px; width: 350px;}
+#nav .text{  width: 280px; height:36px; border: 1px solid #e5e5e5; }
+#nav .text:focus{ outline: none; }
+#nav .button{  width: 70px; height:38px; color: #3e3e3e; background:#F0EEE8; border: none; 
+	           position: absolute; right: 0px; border: 1px solid #e5e5e5; font-size: 12px; }
+#nav .button:active{ background: #999; color: #fff; }
+#nav .button:focus{ outline: none; }

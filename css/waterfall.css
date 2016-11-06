@@ -1,0 +1,51 @@
+
+.water-nav{ width: 990px; height: 80px; border-bottom: 1px solid #E8E3D3; margin-bottom: 30px; 
+            position: relative;  }
+.water-nav p{ font-size: 20px; font-family: "微软雅黑"; color: #867F6F; line-height: 120px; }
+.water-nav a{ position: absolute; right: 0; text-decoration: none; color: #F7BD44;font-size: 12px; top: 55px; }
+.water-nav a:hover{color: #E79D02; }
+.water p a{ color: #F7BD44; }
+.water p a:hover{ color:#E79D02; }
+.waterfall ul{ border: 1px solid #E8E3D3; box-shadow: 5px 5px 8px #E8E3D3; width: 225px; margin-bottom: 20px; }
+.waterfall ul li{ list-style-type: none; }
+.waterfall ul li img{ width: 225px; }
+.waterfall ul .userli{ width: 205px; height: 80px; margin: 0 auto; position: relative; }
+.waterfall ul .userli img{ width: 73px; height: 73px; border: 3px solid #FFFFFF; border-radius: 10px; 
+	            position: absolute; bottom: 30px; }
+.waterfall ul .userli p{ position: relative; right: -85px; top: 10px; font-size: 12px; margin-bottom: 10px; }
+.waterfall ul .userli strong{ position: relative; right: -150px; top: -20px; display: inline-block; background: #F7BD44;
+                              color: #FFFFFF; padding:2px;  }
+.waterfall ul .textli{ width: 195px; height: 163px; margin: 0 auto; border-bottom: 2px solid #F0EEE8; margin-bottom: 10px;}
+.waterfall ul .textli p{ margin-top: 10px; line-height: 1.8em; font-size: 14px; }
+.waterfall ul .textli a{ font-size: 20px;  color: #000000; }
+.waterfall ul .textli a:hover{ color: #F7BD44; }
+.waterfall ul .replayli{ width: 195px; margin: 0 auto; position: relative; height: 100px; }
+.waterfall ul .replayli img{ width: 30px; height: 30px; border-radius: 3px; position: absolute; top: 10px; }
+.waterfall ul .replayli .name{ font-size: 12px; position: absolute; left: 35px; top: 10px; color: #867F6F; }
+.waterfall ul .replayli p{ font-size: 12px; position: absolute; left: 35px; top: 30px; color: #867F6F; }
+
+
+/*css3实现瀑布流布局*/
+.waterfall{ 
+	-moz-column-count:4;
+	-webkit-column-count:4;
+	-ms-column-count:4;
+    column-count:4;
+}
+
+/*热门预告片瀑布流布局*/
+.movie-recent-item-nav{ border-bottom: 1px solid #E8E3D3; position: relative; }
+.movie-recent-item-nav p{ font-size: 18px; font-family: "微软雅黑"; color: #867F6F; line-height: 40px;}
+
+#movie-recent .movie-recent-item{ position: relative; width: 140px; }
+#movie-recent .movie-recent-item .movie{ height: 100px; width: 140px; }
+#movie-recent .movie-recent-item .vidio-icon{ position: absolute; bottom: 30px; left: 5px; }
+#movie-recent .movie-recent-item p{ font-size: 12px; color: #333333; margin-top: 0px; }
+
+#movie-recent{
+	padding-top: 20px; 
+	-moz-column-count:2;
+	-webkit-column-count:2;
+	-ms-column-count:2;
+    column-count:2;
+}

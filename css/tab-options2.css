@@ -1,0 +1,52 @@
+/*public*/
+*{ font-family: "微软雅黑";}
+.movie-mask{ height: 225px; width: 160px; position: absolute;  top: 0; z-index: 10;
+	         background: #000000; opacity: 0.5; display: none; }
+.movie-infor{  width: 125px;position: absolute; z-index: 100;
+               padding-top: 20px;font-size: 14px;
+               left: 20px; top: 25px;  cursor: pointer; display: none; }
+.movie-infor span{color: #FFFFFF; display: block;line-height: 24px;overflow: hidden;
+	              text-overflow: ellipsis;white-space:nowrap; 
+	              font-family: "华文细黑";}/*最后这三个属性只有一起使用
+	                                         时才有超出的文本以省略号显示的效果*/
+
+/*style*/
+
+#tab-control{ border-bottom: 1px solid #F0EEE8; margin-bottom: 30px; position: relative; height: 30px;}
+#tab-control p{ font-size: 16px;position: absolute; left: 100px; bottom: 0px; color: #867F6F; 
+	            cursor: pointer; line-height: 40px; }
+#tab-control p:hover{color: #3e3e3e; }
+#tab-control #first{ left: 0; }
+#tab-control .active{ color: #3e3e3e; border-bottom: 1px solid #F7BD44;  }
+
+
+/*默认初始状态为section1部分显现，section2部分隐藏，当触发
+点击事件时，通过js动态控制section1,2 display的值，
+重新设置显示和隐藏部分*/
+#movie .section1{ position: relative;
+                  display:block; 
+                  -moz-column-count:3;
+	              -webkit-column-count:3;
+	              -ms-column-count:3;
+                  column-count:3;}
+
+#movie .section1 .box{ position: relative; margin-bottom: 80px; } 
+#movie .section1 div img{ height: 225px; width: 160px; }
+#movie .section1 div a{ text-decoration: none;display: block; 
+	                    height: 40px; width:160px; background:#F7BD44; color: #FFFFFF; text-align: center;
+	                    line-height: 35px; position: absolute; bottom: -36px; font-size: 12px; }
+
+
+
+#movie .section2{ position: relative;
+                  display:none; 
+                  -moz-column-count:3;
+	              -webkit-column-count:3;
+	              -ms-column-count:3;
+                  column-count:3;}
+
+#movie .section2 .box{ position: relative; margin-bottom: 80px; } 
+#movie .section2 div img{ height: 225px; width: 160px; }
+#movie .section2 div a{ text-decoration: none; display: block; 
+	                    height: 40px; width:160px; background:#fff; color: #3e3e3e; text-align: center;
+	                    line-height: 35px; position: absolute; bottom: -36px;  font-size: 12px; font-family: "微软雅黑"; border: 1px solid #e5e5e5; border-top: none; }
